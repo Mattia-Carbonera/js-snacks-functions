@@ -9,27 +9,28 @@ const name = "Mario";
 
 // Dichiara la funzione qui.
 
-const name = "Mario";
-
-// Dichiara la funzione qui.
-
 let data = new Date();
 
 let hours = data.getHours();
+let min = data.getMinutes();
 
-console.log(hours);
+console.log(`Sono le ore: ${hours}:${min}`);
 
-if (hours <= 13) {
-  alert("Buongiorno " + name);
-}
+const checkHour = (time, nameOf) => {
+  if (time <= 13) {
+    return alert(`Sono le ore: ${hours}:${min}\rBuongiorno ${nameOf} `);
+  }
 
-if (hours >= 17) {
-  alert("Buonasera " + name);
-}
+  if (time >= 17) {
+    return alert(`Sono le ore: ${hours}:${min}\rBuonasera ${nameOf} `);
+  }
 
-if (hours > 13 && hours < 17) {
-  alert("Buon pomeriggio " + name);
-}
+  if (time > 13 && hours < 17) {
+    return alert(`Sono le ore: ${hours}:${min}\rBuon pomeriggio ${nameOf} `);
+  }
+};
+
+let result = checkHour(hours, name);
 
 // Invoca la funzione qui e stampa il risultato in console
 
