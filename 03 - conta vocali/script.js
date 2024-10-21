@@ -4,23 +4,21 @@ const word = "javascript";
 
 // Dichiara la funzione qui.
 
-let numVowels = 0;
+let numVowels = [];
 const whitelist = ["a", "e", "i", "o", "u"];
 
 const checkWord = (stringToCheck, wordToCheck) => {
-  for (let i = 0; i < wordToCheck.length; i++) {
-    let index = stringToCheck == wordToCheck[i];
-    if (index == true) numVowels++;
-
-    console.log(index);
+  for (let i = 0; i < stringToCheck.length; i++) {
+    let index = stringToCheck.charAt(i);
+    // let checkChar = whitelist.includes(index)
+    if (whitelist.includes(index)) {
+      numVowels.push(index);
+    }
   }
 };
 
-for (let i = 0; i < word.length; i++) {
-  let index = checkWord(word.charAt(i), whitelist);
-}
-
 console.log(checkWord(word, whitelist));
+console.log(numVowels);
 
 // Invoca la funzione qui e stampa il risultato in console
 
