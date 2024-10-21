@@ -2,12 +2,17 @@
 
 const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
-
 // Dichiara la funzione qui.
 
+let initialName = [];
+
+names.forEach((currentWord) => {
+  index = currentWord.charAt(0);
+  initialName.push(index);
+});
+
+console.log(initialName);
 
 // Invoca la funzione qui e stampa il risultato in console
-
-
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
