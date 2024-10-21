@@ -11,8 +11,7 @@ names.forEach((currentWord) => {
   initialName.push(index);
 });
 
-console.log(initialName);
-
 // Invoca la funzione qui e stampa il risultato in console
+console.log(initialName);
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
