@@ -17,7 +17,7 @@ const checkWord = (stringToCheck, wordToCheck) => {
 };
 
 for (let i = 0; i < word.length; i++) {
-  let index = checkWord(stringToCheck.charAt(i));
+  let index = checkWord(word.charAt(i), whitelist);
 }
 
 console.log(checkWord(word, whitelist));
