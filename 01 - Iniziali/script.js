@@ -7,7 +7,7 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 let initialName = [];
 
 names.forEach((currentWord) => {
-  index = currentWord.charAt(0);
+  let index = currentWord.charAt(0);
   initialName.push(index);
 });
 
